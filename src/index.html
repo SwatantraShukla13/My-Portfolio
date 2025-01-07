@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+<body class="bg-white dark:bg-slate-950 ">
+        <header class="bg-transparent z-20 fixed top-0  left-0 right-0 md:py-1 transition-all duration-300 ">       
+        <nav class="max-w-7xl mx-auto bg-gray-800 md:bg-transparent p-5 "> 
+            <div class="flex justify-between items-center ">
+                <!-- header logo -->
+                <a href="#home" class="text-green-400 text-2xl  font-serif font-bold md:text-4xl flex gap-3 items-center"><img class="w-10 z-10 h-10 md:w-16 md:h-16" src="icon/logo.png" alt="Logo">Portfolio</a> 
+                
+                <!-- Toogle Button                 -->
+                
+                <label for="toogle" class="hidden md:flex justify-between items-center p-2 text-xl  ">
+                    <img src="icon/light.png" class="w-6 h-6" alt="light">
+                    <input name="toogle" type="checkbox" id="toogle" class=" absolute w-20 h-8 appearance-none peer">
+                    <span class="w-9 h-5 flex items-center flex-shrink-0 p-1 bg-green-400 rounded-full after:w-4 after:h-4 after:bg-black after:rounded-full after:shadow-md peer-checked:bg-slate-700 duration-300 ease-in-out after:duration-300 peer-checked:after:translate-x-3"></span>
+                    <img src="icon/dark.png" class="ml-1 w-4 h-4" alt="dark">
+                </label>
+                    
+                <!-- navbar menu for large screen -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="font-semibold text-lg  hover:text-red-400 hover:scale-95 text-green-400 ">Home</a>
+                    <a href="#about" class="font-semibold text-lg hover:text-red-400 hover:scale-95 text-green-400">About</a>
+                    <a href="#skills" class="font-semibold text-lg hover:text-red-400 hover:scale-95 text-green-400">Skills</a>
+                    <a href="#certifications" class="font-semibold text-lg hover:text-red-400 hover:scale-95 text-green-400">Certifications</a>
+                    <a href="#projects" class="font-semibold text-lg hover:text-red-400 hover:scale-95 text-green-400">Projects</a>
+                    <a href="#contact" class=" text-lg hover:text-red-400 hover:scale-95 font-semibold text-green-400">Contact</a>
+                </div>
+                <!-- Menu button for mobile -->
+                 <div class="md:hidden">
+                    <button class="text-white text-3xl mr-4" id="mobile-menu-button">
+                       <img src="icon/menu-icon.png" class="w-16 h-6"   alt="">
+                    </button>
+                 </div>  
+            </div>
+            <!-- mobile menu list -->
+            <div id="mobile-menu" class="hidden md:hidden ">
+                <a href="#home" class="text-white text-lg hover:text-black  block py-2 hover:bg-white">Home</a>
+                <a href="#about" class="text-white text-lg hover:text-black  block py-2 hover:bg-white">About</a>
+                <a href="#skills" class="text-white text-lg hover:text-black  block py-2 hover:bg-white">Skills</a>
+                <a href="#certifications" class="text-white hover:text-black  text-lg block py-2 hover:bg-white">Certifications</a>
+                <a href="#projects" class="text-white text-lg hover:text-black  block py-2 hover:bg-white">Projects</a>
+                <a href="#contact" class="text-white text-lg hover:text-black  block py-2 hover:bg-white">Contact</a>
+             </div>
+        </nav>
+    </header>
+    <script src="appicon.js"></script>
+    <section class="max-w-7xl  mx-auto px-5 z-0 " id="home" >
+        <div  class="md:flex  justify-between items-center gap-4 md:pt-20 py-10 ">
+            <div  class=" space-y-2 md:m-20 m-10 ">
+                <p class="text-white text-3xl ml-1 font-mono mb-4">Hello   <span class="text-green-400 pl-2">I'm</span></p>
+                <h1 class="text-green-400 text-5xl font-semibold font-sans">Swatantra Shukla</h1>
+                <p class="text-red-500 text-xl font-sans font-light ml-2">Full Stack Web Developer</p>
+                <p class="text-white text-l font-sans font-light ml-2">I love to create web apps that would make life easy, <br>accessible and enjoyable for people.</p>
+                <div class="flex space-x-2 m-4">
+                      
+                    <a href="https://www.linkedin.com/in/swatantra-prakash-shukla-b81933283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <img class="w-8 h-8 rounded-md hover:scale-105" src="icon/linkedin.png" alt="linkedin"></a>
+                    <a href="https://github.com/SwatantraShukla13">
+                        <img class="w-8 h-8 rounded-md hover:scale-105" src="icon/github.png" alt="github">
+                    </a>
+                    <a href="https://www.facebook.com">
+                        <img class="w-8 h-8 rounded-md hover:scale-105" src="icon/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img class="w-8 h-8 rounded-md hover:scale-105" src="icon/instagram.jpg" alt="">
+                    </a>
+                </div>
+                <button class="text-white shadow-2xl animate-bounce transition-all hover:-translate-y-5 hover:scale-105 duration-300 ease-in-out hover:animate-none   bg-red-500 border font-semibold  rounded-2xl text-center mx-20 m-5 my-5 md:my-10 p-2 text-lg md:text-sm">Download Resume</button>
+                
+            </div>
+            <div class="-my-10 order-1 md:order-none">
+                <img src="image/profile image.jpeg" class="md:shadow-2xl hover:-translate-y-2 hover:scale-105 ease-in-out duration-500 w-60 ml-11 md:w-80 rounded-3xl mr-36" alt="">
+            </div>
+            
+        </div>
+    </section>
+    <section id="about" class="max-w-7xl mx-auto px-5 z-0 bg-black">
+        <div class="md:mx-28 md:pt-28 pt-20">
+            <article class="flex justify-center">
+                <h1 class="mx-10  text-4xl font-semibold font-Work serif text-blue-400  ">About Me</h1>
+            </article>
+            <div class=" md:flex justify-between ">
+               
+                <article class="h-30 md:py-10 py-10 px-6 ml-12  " >
+                    <img class="hover:scale-105 duration-300 drop-shadow-lg shadow-white ease-in-out " src="image/about us.PNG" alt="About-image">
+                </article>
+                <article class="space-y-4 space-x-10 md:py-10 py-10">
+                    <br>
+                    <p class="text-white md:mx-10 mx-2">
+                        Hi! I'm a frontend developer. As a highly motivated and dedicated individual with a strong work ethic, I'm always looking to learn and grow, and I,m excited to see where my takes me. 
+                    </p>
+                    <p class="text-white md:mx-10 mx-2 ">
+                        I'm comfortable in my ability in adopting to new technologies, as well as to collaborate with cross-functional teams, drive projects forward and deliver accurate results. I'm always looking for new challenges to take on.
+                    </p>
+                    <button class="mx-20 m-5 my-5 md:my-10 p-2 text-sm md:text-sm   border font-semibold  text-white bg-red-500 rounded-xl transition-all animate-pulse hover:animate-none duration-300 ease-in-out  hover:scale-105">Read more ...</button>
+                </article>
+            </div>
+
+        </div>
+           
+
+    </section>
+    <section class="max-w-7xl mx-auto px-5 z-0" id="skills">
+        <div class="md:pt-28 pt-20">
+            <div class="flex justify-center items-center mb-10">
+                <h1 class="text-white text-4xl font-bold">My <span class="text-blue-400">Skills</span></h1>
+            </div>
+            <div class="md:flex justify-between">
+                <div class="bg-gray-800 h-96  md:w-1/2   rounded-lg ">
+                    <div class=" m-4 p-2">
+                        <div class="text-white mt-2 ">HTML/CSS</div>
+                        <div class="hover:scale-105 ease-in-out duration-300 w-full h-4 bg-gray-200 rounded-full py-3 dark:bg-gray-700 overflow-hidden">
+                        <div class="bg-blue-500 text-xs font-medium  transition-width duration-500 text-white text-center p-0.5 leading-none rounded-full" style="width: 75%"> 75%</div>
+                        </div>
+                        <div class="text-white mt-2">C++</div>
+                        <div class=" hover:scale-105 ease-in-out duration-300 w-full h-4 bg-gray-200 rounded-full py-3 dark:bg-gray-700">
+                        <div class="bg-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 70%">70%</div>
+                        </div>
+    
+                        <div class="text-white mt-2">Java</div>
+                        <div class="hover:scale-105 ease-in-out duration-300 w-full h-4 bg-gray-200 rounded-full py-3">
+                        <div class="bg-blue-500 text-xs font-medium text-white text-center p-0.5 rounded-full " style="width: 70%;" >70%</div>
+                        </div>
+    
+                        <div class="text-white mt-2">Python</div>
+                        <div class="hover:scale-105 ease-in-out duration-300 w-full h-4 bg-gray-200 rounded-full py-3">
+                        <div class="bg-blue-500 text-xs font-medium text-white text-center p-0.5 rounded-full " style="width: 50%;" >50%</div>
+                        </div>
+    
+                        <div class="text-white mt-2">Javascript</div>
+                        <div class="hover:scale-105 ease-in-out duration-300 w-full h-4 bg-gray-200 rounded-full py-3">
+                        <div class="bg-blue-500 text-xs font-medium text-white text-center p-0.5 rounded-full " style="width: 62%;" >62%</div>
+                        </div>
+    
+                        <div class="text-white mt-2">DBMS</div>
+                        <div class="hover:scale-105 ease-in-out duration-300 w-full h-4 bg-gray-200 rounded-full py-3">
+                        <div class="bg-blue-500 text-xs font-medium text-white text-center p-0.5 rounded-full " style="width: 78%;" >78%</div>
+                        </div>
+    
+                        <div class="text-white mt-2">Data Structure & Algorithm</div>
+                        <div class="hover:scale-105 ease-in-out duration-300 w-full h-4 bg-gray-200 rounded-full py-3">
+                        <div class="bg-blue-500 text-xs font-medium text-white text-center p-0.5 rounded-full " style="width: 68%;" >68%</div>
+                        </div>
+    
+                      
+                    </div>
+                </div>
+                <div class="w-1/2 ">
+                    <div class="flex md:justify-between md:px-20">
+                        <div class="w-50 h-50 hover:scale-110 ease-in-out duration-300">
+                            <svg height="150" width="150">
+                                <!-- background circle -->
+                                <circle r="70" cx="75" cy="75" fill="transparent" stroke="gray" stroke-width="10" opacity="0.5" />   
+                                
+                                <!-- progress circle  -->
+                                <circle r="70" cx="75" cy="75" stroke="rgb(0, 128, 255)" fill="transparent" stroke-width="10" stroke-dasharray="400" stroke-dashoffset="52" transform="rotate(-90 75 75)" > </circle>
+        
+                                <text x="75" y="75" text-anchor="middle" font-size="24" font-family="Arial" fill="rgb(0, 128, 255)" dy=".5em" >83%</text>
+        
+                            </svg>
+                            <p class="text-white ml-8 text-lg">Team Work</p>
+                        </div>
+                        <div class="w-50 h-50 hover:scale-110 ease-in-out duration-300">
+                            <svg height="150" width="150">
+                            <!-- background circle -->
+                                <circle r="70" cx="75" cy="75" fill="transparent" stroke="gray" stroke-width="10" opacity="0.5" />   
+                            
+                                <!-- progress circle  -->
+                                <circle r="70" cx="75" cy="75" stroke="rgb(0, 128, 255)" fill="transparent" stroke-width="10" stroke-dasharray="400" stroke-dashoffset="10" transform="rotate(-90 75 75)" > </circle>
+    
+                                <text x="75" y="75" text-anchor="middle" font-size="24" font-family="Arial" fill="rgb(0, 128, 255)" dy=".5em" >90%</text>
+    
+                            </svg>
+                            <p class="text-white ml-8 text-lg">Creativity</p>
+                        </div>
+        
+                    </div>
+                    
+                    <div class="flex justify-between py-4  md:px-20"> 
+                        <div class="w-50 h-50 hover:scale-110 ease-in-out duration-300">
+                            <svg height="150" width="150">
+                                <!-- background circle -->
+                                <circle r="70" cx="75" cy="75" fill="transparent" stroke="gray" stroke-width="10" opacity="0.5" />   
+                                
+                                <!-- progress circle  -->
+                                <circle r="70" cx="75" cy="75" stroke="rgb(0, 128, 255)" fill="transparent" stroke-width="10" stroke-dasharray="400" stroke-dashoffset="80" transform="rotate(-90 75 75)" > </circle>
+        
+                                <text x="75" y="75" text-anchor="middle" font-size="24" font-family="Arial" fill="rgb(0, 128, 255)" dy=".5em" >72%</text>
+        
+                            </svg>
+                            <p class="text-white ml-2 text-lg" >Problem Solving</p>
+                       </div>
+                       <div class="w-50 h-50 hover:scale-110 ease-in-out duration-300">
+                            <svg height="150" width="150">
+                                <!-- background circle -->
+                                <circle r="70" cx="75" cy="75" fill="transparent" stroke="gray" stroke-width="10" opacity="0.5" />   
+                            
+                                <!-- progress circle  -->
+                                <circle r="70" cx="75" cy="75" stroke="rgb(0, 128, 255)" fill="transparent" stroke-width="10" stroke-dasharray="400" stroke-dashoffset="90" transform="rotate(-90 75 75)" > </circle>
+    
+                                <text x="75" y="75" text-anchor="middle" font-size="24" font-family="Arial" fill="rgb(0, 128, 255)" dy=".5em" >70%</text>
+    
+                            </svg>
+                            <p class="text-white ml-2 text-xl">Communication</p>
+                        </div>
+    
+    
+                    </div>
+                     
+                </div>
+                
+            </div>
+        </div>        
+    </section>
+    <section class="max-w-7xl mx-auto px-5 mt-20  z-0" id="certifications">
+       <div class="mb-20 h-3/4 md:pt-28 pt-20 ">
+            <article class="flex justify-center mb-10">
+                <h1 class="text-4xl text-green-400 font-bold">Certificates</h1>
+            </article>                
+            <div class="flex flex-wrap justify-between h-full gap-4 items-start">
+                <!-- Certificate 1 -->
+                <article class="rounded-3xl shadow-lg md:w-1/3 h-96 flex-grow hover:scale-105 ease-in duration-300 relative">
+                  <img src="certificates/10.jpeg" class="flex items-start w-full h-2/3 object-cover rounded-t-lg" alt="Certificate 1">
+                  <div class="p-4 bg-white rounded-b-lg flex flex-col items-center">
+                    <h3 class="text-xl font-semibold text-center text-gray-800">High School Marksheet</h3>
+                    <p class="text-sm text-center text-gray-600">view marksheet click below button</p>
+                    <button class="mt-2 p-2 text-sm md:text-sm   border font-semibold  text-white bg-red-500 rounded-xl transition-all  duration-300 ease-in-out  hover:scale-105">
+                        <a href="high-school.html">View Certificate</a>
+                    </button>
+                  </div>
+                </article>
+              
+                <!-- Certificate 2 -->
+                <article class="rounded-lg shadow-lg md:w-1/3 flex-grow hover:scale-105 duration-300 ease-in h-96 relative">
+                  <img src="certificates/Graduation.jpeg" class="w-full h-2/3 items-start object-cover rounded-t-lg" alt="Certificate 2">
+                  <div class="p-4  bg-white rounded-b-lg flex flex-col items-center">
+                    <h3 class="text-xl font-semibold text-center text-gray-800">BCA Marksheet</h3>
+                    <p class="text-sm text-center text-gray-600">view marksheet click below button</p>
+                    <button class="mt-2 p-2 text-sm md:text-sm   border font-semibold  text-white bg-red-500 rounded-xl transition-all duration-300 ease-in-out  hover:scale-105">
+                        <a href="graduation.html">View Certificate</a>
+                    </button>
+                  </div>
+                </article>
+              
+                <!-- Certificate 3 -->
+                <article class="rounded-lg shadow-lg md:w-1/3  flex-grow hover:scale-105 duration-300 ease-in h-96 relative">
+                  <img src="certificates/post-graduation.jpeg" class="w-full h-2/3 object-cover rounded-t-lg" alt="Certificate 3">
+                  <div class="p-4 bg-white rounded-b-lg flex  flex-col items-center">
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-1">MCA Marksheet</h3>
+                    <p class="text-sm text-center text-gray-600">view marksheet click below button</p>
+                    <button class="mt-2 p-2 text-sm md:text-sm   border font-semibold  text-white bg-red-500 rounded-xl transition-all duration-300 ease-in-out  hover:scale-105">
+                        <a href="Pg-certificate.html">View Certificate</a>
+                    </button>
+                  </div>
+                </article>
+            </div>
+
+       </div>
+
+    </section>
+    <section class="max-w-7xl mx-auto px-5 mt-20 z-0" id="projects">
+        <div class="mb-20 h-3/4 md:pt-28 pt-20">
+            <!-- project heading -->
+            <div class="flex justify-center mb-10">
+                <h1 class="text-4xl text-green-400 font-bold">Projects</h1>
+            </div>
+            <div class="flex flex-wrap  gap-4">
+                <!-- first project -->
+                <article class="md:w-1/3 h-[28rem] flex-grow rounded-md  overflow-hidden  relative">
+                    <img src="project image/cms.webp" class=" w-full hover:-translate-y-full ease-in-out z-10 duration-300 h-full bg-cover  rounded-md absolute" alt="">
+                    <div class=" h-28[rem] py-[8rem] md:py-[9rem] z-0 rounded-md bg-white  flex flex-col  justify-center items-center">
+                        <h2 class="text-2xl font-semibold text-green-400 mb-2 text-center">College Management System</h2>
+                        <p class="mx-4 ml-6">Project is develop for managing college data like data of various department of college, all student record, all faculty details etc. </p>
+                        <button class=" bg-red-500 p-1 hover:bg-red-600 rounded-lg mt-2 text-white">View Details...</button>
+                    </div>
+                </article>
+                <!-- second project -->
+                <article class="md:w-1/3 h-[28rem] bg-white flex-grow rounded-md overflow-hidden relative">
+                    <img src="project image/shs.jpg" class="z-0 w-full h-full hover:-translate-y-full ease-in-out duration-300 bg-cover absolute rounded-md" alt=" housiong system">
+                    <div class=" h-28[rem] py-[8rem] rounded-md bg-white flex flex-col z-0 top-1/2  justify-center items-center">
+                        <h2 class="text-2xl font-semibold text-green-400 mb-2 text-center">Student Housing System</h2>
+                        <p class="mx-4 ml-6">Project is develop for finding rooms, pg or hostel on rent for students and other person who going to outside for study or job. </p>
+                        <button class="bg-red-500 p-1 hover:bg-red-600 rounded-lg mt-2  text-white">View Details...</button>
+                    </div>
+                </article>
+
+                <!-- third project -->
+
+                <article class="md:w-1/3 h-[28rem] bg-white rounded-md flex-grow overflow-hidden relative"> 
+                    <img src="project image/medical management system.webp" class="w-full h-full z-10 absolute hover:-translate-y-full ease-in-out duration-300 bg-cover rounded-md" alt=" medical managment system">
+                    <div class=" h-28[rem] py-[8rem] rounded-md bg-white flex flex-col z-0 justify-center items-center">
+                        <h2 class="text-2xl font-semibold text-green-400 mb-2 text-center">Pharmacy Management System</h2>
+                        <p class="mx-4 ml-6">Project is devolop for managing whole record of medicla store like available stock, sales return, sales billing etc. </p>
+                        <button class="bg-red-500 p-1 hover:bg-red-600 rounded-lg mt-2 hover:scale-105 ease-in duration-300 text-white">View Details...</button>
+                    </div>
+                </article>
+              
+               
+              
+                    <!-- fourth project -->
+
+                <article class="md:w-1/3 h-[28rem] bg-white relative flex-grow overflow-hidden rounded-md">
+                    <img src="project image/attendence System.png" class="w-full h-full hover:-translate-y-full z-10 ease-in-out duration-300 absolute bg-cover rounded-md" alt="">
+                    <div class=" h-28[rem] py-[8rem] rounded-md bg-white flex flex-col z-0 justify-center items-center">
+                        <h2 class="text-2xl font-semibold text-green-400 mb-2 text-center">Attendence Managemnt System</h2>
+                        <p class="mx-4 ml-6">Project is devolop for managing staff and student attendence. </p>
+                        <button class="bg-red-500 hover:bg-red-600 p-1 rounded-lg mt-2 text-white">View Details...</button>
+                    </div>
+                </article>
+                <!-- fifth project -->
+                <article class="md:w-1/3 h-[28rem] bg-white flex-grow relative overflow-hidden rounded-md">
+                    <img src="project image/E-comerce.webp" class="w-full h-full bg-cover z-10 hover:-translate-y-full ease-in-out duration-300 absolute rounded-md" alt="">
+                    <div class=" h-28[rem] py-[7rem] rounded-md bg-white flex flex-col z-0 justify-center items-center">
+                        <h2 class="text-2xl font-semibold text-green-400 mb-2 text-center">E-Commerce Website</h2>
+                        <p class="mx-4 ml-6">Website is develop for online shoping. In this website user can online order of any product & if any issue arise on order then cancel order and if order is delivered then return also. </p>
+                        <button class="bg-red-500 p-1  rounded-lg hover:bg-red-600 mt-2 text-white">View Details...</button>
+                    </div>
+                </article>
+                <!-- sixth project -->
+
+                <article class="md:w-1/3 h-[28rem] bg-white flex-grow overflow-hidden relative rounded-md">
+                    <img src="project image/lms.webp" class="w-full h-full bg-cover z-10 hover:-translate-y-full ease-in-out duration-300 absolute rounded-md" alt="">
+                    <div class=" h-28[rem] py-[7rem] rounded-md bg-white flex flex-col z-0 justify-center items-center">
+                        <h2 class="text-2xl font-semibold text-green-400 mb-2 text-center">Library Management System</h2>
+                        <p class="mx-4 ml-6">Project is devolop for managing all records of student and books also. Through LMS admin can manage all records of books and students like issue books, available books present, no. of students who join library etc. </p>
+                        <button class="bg-red-500 p-1 rounded-lg hover:bg-red-600 mt-2 text-white">View Details...</button>
+                    </div>
+                </article>           
+
+            </div>
+
+        </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-5 mt-20 z-0" id="contact">
+        <div class="mb-20 h-3/4 md:pt-28 pt-20">
+            <div class="flex justify-center mb-10">
+                <h1 class="text-4xl text-green-400 font-bold">Contact Me</h1>
+            </div>
+
+            <div class="w-full h-full md:flex gap-2 ml-0"> 
+                <div class="md:w-1/2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMalqHHGy5NazD93FrkbKalWs8-jprj3ruFw&s" class="w-full h-full bg-cover text-white" alt="Contact-image">
+                </div>
+  
+            
+                <fieldset class="w-full h-full border-2 border-blue-800  md:p-4 ml-0">
+                    <legend class="text-white font-semibold text-xl">Information</legend>
+            
+                    <!-- form section -->
+                    <form action="" class="flex  flex-col">
+                        <label for="name" class="text-xl  text-white font-semibold">Name: </label>
+                        <input type="text" name="name" id="name" autocomplete="off"  class="focus:bg-slate-200  p-1 pl-2 border-2 border-gray-600 rounded-lg font-medium" placeholder="Enter your name....">
+                    
+                        <label for="email" class="text-xl mt-1  text-white font-semibold">Email: </label>
+                        <input type="email" name="email" id="email" autocomplete="off" class="focus:bg-slate-200 w-full p-1 pl-2 border-2 border-gray-600 rounded-lg font-medium" placeholder="Enter your Email-Id.... ">
+                     
+                        <label for="contacts" class="text-xl mt-1  text-white font-semibold">Contact: </label>
+                        <input type="tel" id="contacts" name="contacts" autocomplete="off" class="focus:bg-slate-200  p-1 pl-2 border-2 border-gray-600 rounded-lg font-medium " placeholder="Enter your mobile no....">
+                    
+                        <label for="message" class="text-xl mt-1  text-white font-semibold">Message: </label>
+                        <textarea name="message" id="message" class="focus:bg-slate-200 w-full p-1 pl-2 border-2 border-gray-600 rounded-lg font-medium" placeholder="Write message...."></textarea>
+            
+                        <div class="flex justify-center ">
+                            
+                            <input class="mx-2 my-5 md:my-10 p-2 text-sm md:text-sm w-32 border font-semibold  text-white bg-red-500 rounded-xl transition-all animate-pulse hover:animate-none duration-300 ease-in-out hover:scale-105" input="submit" type="submit">
+                            <input type="reset" value="Reset" class="mx-2  my-5 md:my-10 p-2 text-sm md:text-sm w-32 border font-semibold  text-white bg-red-500 rounded-xl transition-all animate-pulse hover:animate-none duration-300 ease-in-out hover:scale-105" >
+                        </div>
+                        
+                    </form>
+                    
+                </fieldset>
+            </div>    
+        </div> 
+          
+        <footer class="bg-black m-0 p-4 ml-0">
+           <div class="md:flex md:justify-between ">
+               <div class="md:ml-10">
+                    <div class="flex  items-center">
+                        <div class="border-t-2 flex-grow border-white w-5"></div>
+                        <span class="flex-shrink mx-1 text-white">Follow Me</span> 
+                        <div class="border-t-2 flex-grow border-white w-5"></div>
+                    </div>
+                    <div class="flex md:justify-center justify-center gap-2   pt-2">
+                
+                        <a href="https://www.linkedin.com/in/swatantra-prakash-shukla-b81933283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                            <img class="w-6 h-6 rounded-md hover:scale-105" src="icon/linkedin.png" alt="linkedin">
+                        </a>
+                        <a href="https://github.com/SwatantraShukla13">
+                            <img class="w-6 h-6 rounded-md hover:scale-105" src="icon/github.png" alt="github">
+                        </a>
+                        <a href="https://www.facebook.com">
+                            <img class="w-6 h-6 rounded-md hover:scale-105" src="icon/facebook.png" alt="facebook">
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <img class="w-6 h-6 rounded-md hover:scale-105" src="icon/instagram.jpg" alt="">
+                        </a>
+                    </div>
+               </div>
+                <div class=" md:mr-10">
+                    <div class="flex items-center">
+                        <div class="border-t-2 flex-grow border-white w-5 "></div>
+                            <span class="flex-shrink text-white mx-1">Contact Me</span>
+                        <div class="border-t-2 flex-grow border-white w-5"></div>
+                    </div>
+                    <div class="flex md:justify-center justify-center gap-2 pt-2">
+                        <a href="">
+                            <img src="icon/call.png" class="w-8 h-8 rounded-md hover:scale-105" alt="">
+                        </a>
+                        <a href="">
+                            <img src="icon/mail.png" class="w-8 h-8 rounded-md hover:scale-105" alt="">
+                        </a>
+                    </div>
+                </div>
+
+             
+           </div>
+            <div class="flex items-center pt-2 pb-0">
+                <div class="border-t-2 border-white flex-grow"></div>
+                <p class="text-white text-sm mx-2">Copyright &copy;2024 My Portfolio</p>
+                <div class="border-t-2 border-white flex-grow"></div>
+            </div>
+        </footer>
+    </section>
+    
+</body>
+</html>
